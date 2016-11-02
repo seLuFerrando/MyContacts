@@ -10,8 +10,18 @@
         <item name="android:textColorSecondary">@color/colorSecondaryText</item>
         <item name="android:textColor">@color/colorPrimaryText</item>
     </style>
+
     <style name="MyButton" parent="Theme.AppCompat.Light">
         <item name="colorControlHighlight">@color/colorPrimaryLight</item>
         <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="MyAlert" parent="android:Theme.Holo.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+        <item name="android:headerBackground">@color/colorPrimaryLight</item>
+        <item name="android:button">@color/colorPrimaryLight</item>
+        <item name="android:textColorHighlight">@color/colorPrimaryText</item>
     </style>
 </resources>

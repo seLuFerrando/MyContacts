@@ -30,57 +30,23 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/cwBirthdate"
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilBirthdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp">
-                <RelativeLayout
-                    android:id="@+id/rlBirthdate"
+                android:layout_marginTop="@dimen/margin_top"
+                android:hint="@string/birthdate">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etBirthdate"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:windowSoftInputMode="stateHidden"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="none"/>
 
-                    <TextView
-                        android:id="@+id/tvBirthdate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/birthdate"
-                        />
-                    <DatePicker
-                        android:id="@+id/datePicker"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/tvBirthdate"
-                        android:background="@color/colorIcons"
-                        android:calendarViewShown="false"
-                        android:datePickerMode="spinner"
-                        />
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/datePicker"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/btCancel"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/cancel"
-                            android:layout_weight="1"
-                            android:theme="@style/MyButton"/>
-
-                        <Button
-                            android:id="@+id/btOk"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/ok"
-                            android:layout_weight="1"
-                            android:theme="@style/MyButton"/>
-                    </LinearLayout>
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/tilTelephone"
@@ -93,7 +59,7 @@
                     android:id="@+id/etTelephone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"/>
+                    android:inputType="phone"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -130,6 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/next"
+                android:layout_gravity="bottom"
                 android:theme="@style/MyButton"/>
         </LinearLayout>
     </ScrollView>
