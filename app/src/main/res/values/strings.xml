@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">My Contacts</string>
     <string name="name">Name:</string>
     <string name="birthdate">Birthdate:</string>
     <string name="telephone">Telephone:</string>
@@ -9,7 +8,11 @@
     <string name="editData">Edit Data</string>
     <string name="confirmData">Confirm Data</string>
     <string name="setDate">Set Date</string>
-    <string name="ok">OK</string>
+    <string name="mDay" translatable="false">Day</string>
+    <string name="mMonth" translatable="false">Month</string>
+    <string name="mYear" translatable="false">Year</string>
+    <string name="ok" translatable="false">OK</string>
     <string name="cancel">Cancel</string>
     <string name="dialogTitle">Choose a date</string>
+    <string name="app_name">My Contacts</string>
 </resources>

@@ -24,4 +24,7 @@
         <item name="android:button">@color/colorPrimaryLight</item>
         <item name="android:textColorHighlight">@color/colorPrimaryText</item>
     </style>
+
+    <style name="AnConFormat" parent="android:Theme.Holo.Light.Dialog" />
+
 </resources>
